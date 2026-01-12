@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mafia / Impostor Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Mafia / Impostor Game</h1>
+
+      <p class="subtitle">
+        Day 1: GET + POST <br />
+        Day 2: DELETE + PUT
+      </p>
+
+      <!-- Controls -->
+      <section class="controls">
+        <button id="btnGet">GET Players</button>
+        <button id="btnEndVoting">End Voting</button>
+        <button id="btnReset">Reset Round</button>
+      </section>
+
+      <!-- Add / Edit Player -->
+      <section class="form-section">
+        <h2>Add Player</h2>
+
+        <input type="text" id="playerName" placeholder="Enter player name" />
+
+        <button id="btnSubmit">POST Add Player</button>
+        <button id="btnCancel" class="hidden">Cancel</button>
+      </section>
+
+      <!-- Status -->
+      <div class="status" id="status">Status: waiting for action...</div>
+
+      <!-- Players List -->
+      <section>
+        <h2>Players</h2>
+
+        <div id="playersList" class="players-grid">
+          <!-- Player card template (example only) -->
+
+          <!-- <div class="player-card">
+            <h3>Player Name</h3>
+            <p>Alive: true</p>
+            <p>Votes: 0</p>
+
+            <div class="card-actions">
+              <button>Vote</button>
+              <button>Edit</button>
+              <button>Eliminate</button>
+              <button class="danger">Delete</button>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Students will write JS here -->
+    <script src="app.js"></script>
+  </body>
+</html>
