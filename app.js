@@ -28,6 +28,10 @@ async function getPlayers() {
     fetch(apiKey).then(res => res.json()).then(res => console.log(res));
 }
 
+async function deletePlayer(player){
+    
+}
+
 postPlayerBtn.addEventListener(`click`, () => {
     getPlayers()
     const name = inputPlayerName.value;
