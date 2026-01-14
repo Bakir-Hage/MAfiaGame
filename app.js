@@ -27,7 +27,7 @@ async function getPlayers() {
     const players = [];
     fetch(apiKey).then(res => res.json()).then(res => console.log(res));
 }
-
+function testfrommhmh(){}
 async function deletePlayer(player){
     
 }
