@@ -19,15 +19,16 @@ async function postPlayer(player) {
     body: JSON.stringify(player),
   }).then(getPlayers());
 }
-
 async function getPlayers() {
   const players = [];
   fetch(apiKey)
     .then((res) => res.json())
     .then((res) => console.log(res));
 }
-async function test() {}
-async function deletePlayer(player) {}
+function testfrommhmh(){}
+async function deletePlayer(player){
+    
+}
 
 postPlayerBtn.addEventListener(`click`, () => {
   getPlayers();
