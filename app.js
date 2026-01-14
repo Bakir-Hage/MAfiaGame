@@ -16,7 +16,7 @@ const cancelEditBtn = document.querySelector("#btnCancel");
 async function postPlayer(player) {
     fetch(apiKey,
         {
-            method: `POST`,
+            method: `PUT`,
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(player)
         }).then(getPlayers());
