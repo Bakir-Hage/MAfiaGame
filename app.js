@@ -22,7 +22,6 @@ async function postPlayer(player) {
         }).then(getPlayers());
 
 }
-
 async function getPlayers() {
     const players = [];
     fetch(apiKey).then(res => res.json()).then(res => console.log(res));
